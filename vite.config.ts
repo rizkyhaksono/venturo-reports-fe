@@ -12,6 +12,6 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: ['']
+    allowedHosts: ['venturo.reports.fe.natee.my.id']
   }
 })
