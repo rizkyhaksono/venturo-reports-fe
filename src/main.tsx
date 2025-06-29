@@ -2,6 +2,7 @@ import '@/index.css'
 import { query } from '@/lib/query'
 import HomePage from '@/pages/home'
 import SalesPage from '@/pages/sales'
+import NotFoundPage from '@/pages/not-found'
 import { QueryClientProvider } from '@tanstack/react-query'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')!).render(
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/sales" element={<SalesPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </BrowserRouter>
       </QueryClientProvider>
