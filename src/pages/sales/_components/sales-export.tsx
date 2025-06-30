@@ -8,12 +8,10 @@ interface SalesExportProps {
 
 export const SalesExport = ({ totalItems, totalStores }: SalesExportProps) => {
   const handleExportExcel = () => {
-    // TODO: Implement Excel export functionality
     console.log('Exporting to Excel...')
   }
 
   const handleExportPDF = () => {
-    // TODO: Implement PDF export functionality
     console.log('Exporting to PDF...')
   }
 

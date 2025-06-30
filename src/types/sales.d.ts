@@ -29,7 +29,6 @@ export interface TransformedStore {
 }
 
 export interface SalesFilters {
-  dateRange?: { from?: Date; to?: Date }
   selectedStore: string
   selectedPaymentMethod: string
 }

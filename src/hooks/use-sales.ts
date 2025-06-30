@@ -2,6 +2,10 @@ import { useMemo } from 'react'
 import { useSales } from '@/services/sales/sales.service'
 import type { SalesItemData, TransformedStore, TransformedItem, PaymentMethods, SalesFilters } from '@/types/sales'
 
+/*
+* Custom hook to transform sales data into a more usable format.
+* @returns An object containing transformed sales data, all payment methods, and loading state.
+*/
 export const useSalesData = () => {
   const { data: salesData } = useSales()
 
@@ -62,6 +66,12 @@ export const useSalesData = () => {
   }
 }
 
+/*
+* Custom hook to filter sales data based on selected store and payment method.
+* @param transformedSalesData - The transformed sales data from useSalesData hook.
+* @param filters - The filters applied by the user, including selectedStore and selectedPaymentMethod.
+* @returns An object containing filtered sales data, total items, and total stores.
+*/
 export const useFilteredSalesData = (transformedSalesData: TransformedStore[], filters: SalesFilters) => {
   const { selectedStore, selectedPaymentMethod } = filters
 

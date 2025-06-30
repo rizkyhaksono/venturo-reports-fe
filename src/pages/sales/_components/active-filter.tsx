@@ -10,7 +10,6 @@ interface ActiveFiltersProps {
 
 export const ActiveFilters = ({ filters, onFiltersChange }: ActiveFiltersProps) => {
   const { selectedStore, selectedPaymentMethod } = filters
-
   const hasActiveFilters = selectedStore !== "all" || selectedPaymentMethod !== "all"
 
   if (!hasActiveFilters) return null

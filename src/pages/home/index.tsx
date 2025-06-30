@@ -25,7 +25,7 @@ function HomePage() {
     {
       icon: <Filter className="w-5 h-5" />,
       title: "Advanced Filtering",
-      description: "Filter by date range, store location, payment method, and categories"
+      description: "Filter by store location, payment method, and categories"
     },
     {
       icon: <Download className="w-5 h-5" />,
